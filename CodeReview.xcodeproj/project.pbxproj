@@ -13,9 +13,12 @@
 		3C46D5411D00624C001C905B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C46D5401D00624C001C905B /* Assets.xcassets */; };
 		3C46D5441D00624C001C905B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C46D5421D00624C001C905B /* LaunchScreen.storyboard */; };
 		3C46D54C1D006265001C905B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C46D54B1D006265001C905B /* Constants.swift */; };
+		3C46D5501D0063C2001C905B /* MobileConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C46D54F1D0063C2001C905B /* MobileConnectSDK.framework */; };
+		C107C80BA26A9CA8FD7A0FC6 /* Pods_CodeReview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31AB8B009D5DF2E66D7EF5 /* Pods_CodeReview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D31AB8B009D5DF2E66D7EF5 /* Pods_CodeReview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeReview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C46D5361D00624C001C905B /* CodeReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C46D5391D00624C001C905B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C46D53B1D00624C001C905B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		3C46D5431D00624C001C905B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C46D5451D00624C001C905B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C46D54B1D006265001C905B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3C46D54F1D0063C2001C905B /* MobileConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileConnectSDK.framework; path = "DerivedData/CodeReview/Build/Products/Debug-iphonesimulator/MobileConnectSDK/MobileConnectSDK.framework"; sourceTree = "<group>"; };
+		9C3F840E88D43DEDBE324A50 /* Pods-CodeReview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeReview.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeReview/Pods-CodeReview.release.xcconfig"; sourceTree = "<group>"; };
+		B3BDCA2B752BD96247C59AFA /* Pods-CodeReview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeReview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeReview/Pods-CodeReview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C46D5501D0063C2001C905B /* MobileConnectSDK.framework in Frameworks */,
+				C107C80BA26A9CA8FD7A0FC6 /* Pods_CodeReview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,8 @@
 			children = (
 				3C46D5381D00624C001C905B /* CodeReview */,
 				3C46D5371D00624C001C905B /* Products */,
+				D181B7D1EF850C070DF48996 /* Pods */,
+				444B135E0405AFAE225220B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +77,24 @@
 			path = CodeReview;
 			sourceTree = "<group>";
 		};
+		444B135E0405AFAE225220B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C46D54F1D0063C2001C905B /* MobileConnectSDK.framework */,
+				1D31AB8B009D5DF2E66D7EF5 /* Pods_CodeReview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D181B7D1EF850C070DF48996 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3BDCA2B752BD96247C59AFA /* Pods-CodeReview.debug.xcconfig */,
+				9C3F840E88D43DEDBE324A50 /* Pods-CodeReview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C46D5481D00624C001C905B /* Build configuration list for PBXNativeTarget "CodeReview" */;
 			buildPhases = (
+				EC34CD50FA92ED1EC54FBDEE /* 📦 Check Pods Manifest.lock */,
 				3C46D5321D00624C001C905B /* Sources */,
 				3C46D5331D00624C001C905B /* Frameworks */,
 				3C46D5341D00624C001C905B /* Resources */,
+				C4D0C612CB418AD0436FB92C /* 📦 Embed Pods Frameworks */,
+				FD70A41960EC3C733E66323A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4D0C612CB418AD0436FB92C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeReview/Pods-CodeReview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC34CD50FA92ED1EC54FBDEE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD70A41960EC3C733E66323A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeReview/Pods-CodeReview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C46D5321D00624C001C905B /* Sources */ = {
@@ -253,8 +332,13 @@
 		};
 		3C46D5491D00624C001C905B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3BDCA2B752BD96247C59AFA /* Pods-CodeReview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/CodeReview/Build/Products/Debug-iphonesimulator/MobileConnectSDK",
+				);
 				INFOPLIST_FILE = CodeReview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GSMA.CodeReview;
@@ -264,8 +348,13 @@
 		};
 		3C46D54A1D00624C001C905B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3F840E88D43DEDBE324A50 /* Pods-CodeReview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/CodeReview/Build/Products/Debug-iphonesimulator/MobileConnectSDK",
+				);
 				INFOPLIST_FILE = CodeReview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GSMA.CodeReview;
@@ -292,6 +381,7 @@
 				3C46D54A1D00624C001C905B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
