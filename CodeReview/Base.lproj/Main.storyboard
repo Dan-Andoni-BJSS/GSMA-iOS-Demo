@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CodeReview" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ht7-fF-yu0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-iP-svV">
+                                        <rect key="frame" x="20" y="328" width="560" height="252"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RIW-1H-qPa">
+                                        <rect key="frame" x="196" y="28" width="209" height="29"/>
+                                        <segments>
+                                            <segment title="Without phone"/>
+                                            <segment title="With phone"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-HJ-Tw4">
+                                        <rect key="frame" x="20" y="64" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-X8-ucg">
+                                        <rect key="frame" x="180" y="277" width="179" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="187" id="0VF-Lg-do9"/>
+                                            <constraint firstAttribute="height" constant="45" id="k1B-SY-WVE"/>
+                                        </constraints>
+                                        <state key="normal" image="mobileConnectButtonImage"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="RIW-1H-qPa" firstAttribute="top" secondItem="ht7-fF-yu0" secondAttribute="top" constant="28" id="GhZ-Tt-1rh"/>
+                                    <constraint firstItem="HX6-X8-ucg" firstAttribute="centerX" secondItem="ht7-fF-yu0" secondAttribute="centerX" id="I8t-3e-qIm"/>
+                                    <constraint firstItem="zeS-HJ-Tw4" firstAttribute="leading" secondItem="ht7-fF-yu0" secondAttribute="leadingMargin" id="L6D-fD-EnD"/>
+                                    <constraint firstItem="d5f-iP-svV" firstAttribute="trailing" secondItem="ht7-fF-yu0" secondAttribute="trailingMargin" id="RBd-TB-kOK"/>
+                                    <constraint firstAttribute="bottom" secondItem="d5f-iP-svV" secondAttribute="bottom" constant="20" id="Tc5-hK-4hL"/>
+                                    <constraint firstItem="HX6-X8-ucg" firstAttribute="centerY" secondItem="ht7-fF-yu0" secondAttribute="centerY" id="W3I-VG-ZNU"/>
+                                    <constraint firstItem="zeS-HJ-Tw4" firstAttribute="top" secondItem="RIW-1H-qPa" secondAttribute="bottom" constant="8" id="ban-bJ-qvd"/>
+                                    <constraint firstItem="RIW-1H-qPa" firstAttribute="centerX" secondItem="ht7-fF-yu0" secondAttribute="centerX" id="eNF-LE-BfQ"/>
+                                    <constraint firstItem="d5f-iP-svV" firstAttribute="leading" secondItem="ht7-fF-yu0" secondAttribute="leadingMargin" id="muP-JQ-dPR"/>
+                                    <constraint firstItem="zeS-HJ-Tw4" firstAttribute="trailing" secondItem="ht7-fF-yu0" secondAttribute="trailingMargin" id="qyk-U9-l9S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ht7-fF-yu0" secondAttribute="bottom" id="38k-CK-Xpp"/>
+                            <constraint firstItem="ht7-fF-yu0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V9o-sE-HxE"/>
+                            <constraint firstItem="ht7-fF-yu0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dqB-yG-VwN"/>
+                            <constraint firstAttribute="trailing" secondItem="ht7-fF-yu0" secondAttribute="trailing" id="lJi-Up-FnA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="mobileConnectButtonImage" width="187" height="45"/>
+    </resources>
 </document>
